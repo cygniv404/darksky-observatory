@@ -1,6 +1,5 @@
 """Tests for observation planning (Milky Way, moon phases)."""
 
-import pytest
 
 from stargazing_spots.observation_planning import (
     milky_way_season,

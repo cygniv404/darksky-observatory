@@ -4,12 +4,12 @@ import numpy as np
 import pytest
 
 from stargazing_spots.skyglow import (
-    build_psf_kernel,
-    compute_sky_brightness,
-    brightness_to_sqm,
-    PropagationConfig,
     CALIB_FACTOR,
     EXTINCTION_RATE,
+    PropagationConfig,
+    brightness_to_sqm,
+    build_psf_kernel,
+    compute_sky_brightness,
 )
 
 

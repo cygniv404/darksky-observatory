@@ -1,12 +1,11 @@
 """Tests for astronomical twilight and cloud cover computation."""
 
 import numpy as np
-import pytest
 
 from stargazing_spots.cloud_cover import (
+    build_darkness_mask,
     compute_sun_altitude,
     is_astronomical_dark,
-    build_darkness_mask,
 )
 
 

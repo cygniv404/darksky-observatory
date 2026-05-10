@@ -1,7 +1,6 @@
 """Tests for OSM enrichment and scoring."""
 
 import geopandas as gpd
-import numpy as np
 import pytest
 from shapely.geometry import Point
 

@@ -2,6 +2,7 @@
 
 Satellite-derived dark-sky mapping pipeline: ingests VIIRS VNP46A4 nighttime radiance, applies PSF skyglow propagation and multi-criteria scoring, outputs ranked stargazing locations.
 
+[![CI](https://github.com/cygniv404/darksky-observatory/actions/workflows/ci.yml/badge.svg)](https://github.com/cygniv404/darksky-observatory/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![STAC](https://img.shields.io/badge/STAC-compliant-green.svg)](https://stacspec.org/)

@@ -1,18 +1,17 @@
 """Tests for the Multi-Criteria Stargazing Suitability Index."""
 
-import numpy as np
-import pandas as pd
-import pytest
 import geopandas as gpd
+import numpy as np
+import pytest
 from shapely.geometry import Point
 
 from stargazing_spots.suitability import (
     SSIWeights,
-    normalize_darkness,
-    normalize_clear_sky,
-    normalize_sky_openness,
-    normalize_elevation,
     compute_ssi,
+    normalize_clear_sky,
+    normalize_darkness,
+    normalize_elevation,
+    normalize_sky_openness,
 )
 
 
