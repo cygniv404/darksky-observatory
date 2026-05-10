@@ -1,0 +1,14 @@
+[project]
+name = "darksky-observatory"
+version = "0.7.0"
+description = "Satellite-derived dark-sky mapping and stargazing site identification"
+requires-python = ">=3.11"
+
+[tool.uv.workspace]
+members = ["apps/stargazing_spots"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0",
+    "ruff>=0.1.0",
+]
