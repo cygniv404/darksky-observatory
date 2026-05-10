@@ -1,0 +1,207 @@
+{
+  "source": "TESS-IDA monthly files (Stars4All NextCloud)",
+  "n_stations": 20,
+  "total_readings": 6409730,
+  "stations": {
+    "stars201": {
+      "lat": 38.7555,
+      "lon": -6.9845,
+      "n_readings": 620914,
+      "median_sqm": 19.79,
+      "max_sqm": 21.59,
+      "p95_sqm": 21.01,
+      "mean_sqm": 19.39,
+      "std_sqm": 1.33
+    },
+    "stars218": {
+      "lat": 39.1095,
+      "lon": -6.6892,
+      "n_readings": 768358,
+      "median_sqm": 20.4,
+      "max_sqm": 22.98,
+      "p95_sqm": 21.35,
+      "mean_sqm": 19.79,
+      "std_sqm": 1.5
+    },
+    "stars271": {
+      "lat": 38.74278,
+      "lon": -7.21,
+      "n_readings": 463094,
+      "median_sqm": 18.83,
+      "max_sqm": 21.68,
+      "p95_sqm": 20.39,
+      "mean_sqm": 18.68,
+      "std_sqm": 1.1
+    },
+    "stars288": {
+      "lat": 38.2197,
+      "lon": -6.6318,
+      "n_readings": 1252597,
+      "median_sqm": 20.56,
+      "max_sqm": 22.99,
+      "p95_sqm": 21.43,
+      "mean_sqm": 19.87,
+      "std_sqm": 1.53
+    },
+    "stars316": {
+      "lat": 38.528546,
+      "lon": -7.016506,
+      "n_readings": 157844,
+      "median_sqm": 19.67,
+      "max_sqm": 21.24,
+      "p95_sqm": 20.97,
+      "mean_sqm": 19.3,
+      "std_sqm": 1.35
+    },
+    "stars319": {
+      "lat": 38.32894,
+      "lon": -6.951691,
+      "n_readings": 149874,
+      "median_sqm": 19.21,
+      "max_sqm": 21.37,
+      "p95_sqm": 20.88,
+      "mean_sqm": 18.93,
+      "std_sqm": 1.4
+    },
+    "stars320": {
+      "lat": 38.516705,
+      "lon": -7.070783,
+      "n_readings": 81197,
+      "median_sqm": 19.04,
+      "max_sqm": 20.53,
+      "p95_sqm": 20.19,
+      "mean_sqm": 18.68,
+      "std_sqm": 1.1
+    },
+    "stars321": {
+      "lat": 38.366184,
+      "lon": -6.789225,
+      "n_readings": 143698,
+      "median_sqm": 19.46,
+      "max_sqm": 20.78,
+      "p95_sqm": 20.33,
+      "mean_sqm": 19.03,
+      "std_sqm": 1.2
+    },
+    "stars322": {
+      "lat": 38.514058,
+      "lon": -6.849581,
+      "n_readings": 87134,
+      "median_sqm": 19.11,
+      "max_sqm": 20.62,
+      "p95_sqm": 20.25,
+      "mean_sqm": 18.82,
+      "std_sqm": 1.16
+    },
+    "stars323": {
+      "lat": 38.166303,
+      "lon": -6.656062,
+      "n_readings": 142109,
+      "median_sqm": 19.1,
+      "max_sqm": 20.47,
+      "p95_sqm": 20.04,
+      "mean_sqm": 18.72,
+      "std_sqm": 1.19
+    },
+    "stars324": {
+      "lat": 38.511152,
+      "lon": -7.279224,
+      "n_readings": 150042,
+      "median_sqm": 19.65,
+      "max_sqm": 21.02,
+      "p95_sqm": 20.64,
+      "mean_sqm": 19.18,
+      "std_sqm": 1.33
+    },
+    "stars325": {
+      "lat": 38.6844841,
+      "lon": -7.1059006,
+      "n_readings": 115985,
+      "median_sqm": 19.25,
+      "max_sqm": 20.26,
+      "p95_sqm": 20.06,
+      "mean_sqm": 18.81,
+      "std_sqm": 1.17
+    },
+    "stars327": {
+      "lat": 38.068173,
+      "lon": -6.539288,
+      "n_readings": 123980,
+      "median_sqm": 19.19,
+      "max_sqm": 20.7,
+      "p95_sqm": 20.33,
+      "mean_sqm": 18.85,
+      "std_sqm": 1.3
+    },
+    "stars328": {
+      "lat": 38.276969,
+      "lon": -6.91978,
+      "n_readings": 21340,
+      "median_sqm": 19.33,
+      "max_sqm": 20.57,
+      "p95_sqm": 20.27,
+      "mean_sqm": 18.9,
+      "std_sqm": 1.23
+    },
+    "stars332": {
+      "lat": 38.6323061,
+      "lon": -7.1578057,
+      "n_readings": 133407,
+      "median_sqm": 19.86,
+      "max_sqm": 21.04,
+      "p95_sqm": 20.57,
+      "mean_sqm": 19.29,
+      "std_sqm": 1.28
+    },
+    "stars384": {
+      "lat": 40.2702,
+      "lon": -6.104225,
+      "n_readings": 128928,
+      "median_sqm": 20.47,
+      "max_sqm": 22.99,
+      "p95_sqm": 21.42,
+      "mean_sqm": 19.82,
+      "std_sqm": 1.52
+    },
+    "stars387": {
+      "lat": 40.164273,
+      "lon": -6.099435,
+      "n_readings": 96519,
+      "median_sqm": 20.49,
+      "max_sqm": 22.96,
+      "p95_sqm": 21.55,
+      "mean_sqm": 19.84,
+      "std_sqm": 1.56
+    },
+    "stars40": {
+      "lat": 41.1774241,
+      "lon": -8.6059636,
+      "n_readings": 608077,
+      "median_sqm": 17.68,
+      "max_sqm": 21.76,
+      "p95_sqm": 18.27,
+      "mean_sqm": 17.51,
+      "std_sqm": 0.64
+    },
+    "stars41": {
+      "lat": 41.1774241,
+      "lon": -8.6059636,
+      "n_readings": 638159,
+      "median_sqm": 17.88,
+      "max_sqm": 19.12,
+      "p95_sqm": 18.5,
+      "mean_sqm": 17.67,
+      "std_sqm": 0.71
+    },
+    "stars66": {
+      "lat": 39.781004,
+      "lon": -6.016262,
+      "n_readings": 526474,
+      "median_sqm": 20.35,
+      "max_sqm": 21.88,
+      "p95_sqm": 21.52,
+      "mean_sqm": 19.9,
+      "std_sqm": 1.48
+    }
+  }
+}

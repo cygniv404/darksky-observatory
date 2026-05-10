@@ -1,0 +1,34 @@
+WKT,name,region,expected_sqm,sqm_source,sqm_type,description
+"POINT (-7.3816 38.4444)",Dark Sky Alqueva Observatory (Cumeada),mainland,21.43,Lima et al. 2016 DOI:10.1080/15287394.2016.1153446,measured,IDA Reserve. Mean of field campaign SQM-L measurements. Live monitor at sqmmonitor.darkskyalqueva.com
+"POINT (-7.0631 38.1782)",Castle of Noudar,mainland,21.3,IDA certification 2018,measured,IDA certified dark-sky fortress. Dedicated observation platform in open grassland
+"POINT (-7.95 40.05)",PASO Observatory (Pampilhosa da Serra),mainland,21.1,Barbosa et al. 2024 arXiv:2404.04090,measured,Space Situational Awareness observatory. Confirmed SQM >= 21.1 in CLOWN paper
+"POINT (-8.162 41.730)",Peneda-Geres National Park (Porta do Mezio),mainland,21.3,Lima 2015 PhD dissertation (ProQuest),measured,Northern entrance area. Field campaign by Lima
+"POINT (-7.533 38.417)",Monsaraz Observatory,mainland,21.4,Dark Sky Alqueva monitoring network,measured,Part of Dark Sky Alqueva reserve monitoring. Continuous SQM station
+"POINT (-7.80 38.20)",Alqueva Lake (eastern shore),mainland,21.5,Lima et al. 2016 (best measurement 21.88),measured,Core of Dark Sky Reserve. Darkest measured point in the reserve
+"POINT (-7.45 38.12)",Barrancos (Serra de Ficalho),mainland,21.4,Estimated from Falchi 2016 World Atlas,estimated,Most remote municipality in mainland Portugal. No ground SQM available
+"POINT (-8.287 37.835)",Messejana (Alto da Vigia),mainland,21.2,Estimated from Falchi 2016 World Atlas,estimated,Hilltop in dark Alentejo interior. No ground SQM available
+"POINT (-7.602 37.947)",Serpa (Pulo do Lobo),mainland,21.2,Estimated from Falchi 2016 World Atlas,estimated,Waterfall viewpoint in deep Alentejo. No ground SQM available
+"POINT (-7.613 40.322)",Serra da Estrela (Torre),mainland,21.0,Estimated from Falchi 2016 + elevation correction,estimated,Highest point mainland Portugal (1993m). No published SQM
+"POINT (-7.028 40.279)",Serra da Malcata (Alto da Machoca),mainland,21.3,Estimated from Falchi 2016 World Atlas,estimated,Nature reserve peak. Remote interior
+"POINT (-6.876 41.712)",Serra de Nogueira (Torre de Celas),mainland,21.0,Estimated from Falchi 2016 World Atlas,estimated,Mountain peak in Tras-os-Montes
+"POINT (-7.799 40.198)",Serra do Acor (Picoto Cebola),mainland,20.8,Estimated from Falchi 2016 World Atlas,estimated,Mountain ridge central Portugal
+"POINT (-6.910 40.863)",Castelo Rodrigo (Caldeireira),mainland,20.5,Estimated from Falchi 2016 World Atlas,estimated,Historic hilltop near Spanish border
+"POINT (-7.454 39.415)",Castelo de Vide (Serra de Sao Mamede),mainland,20.5,Estimated from Falchi 2016 World Atlas,estimated,Mountain peak Alto Alentejo
+"POINT (-8.337 39.478)",Constancia (Centro Ciencia Viva),mainland,19.5,Estimated from Falchi 2016 World Atlas,estimated,Astronomy education park. Near Abrantes (light pollution)
+"POINT (-8.19 40.08)",Candal viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Hilltop ~500m from village. Actual SQM not publicly available
+"POINT (-8.12 40.12)",Pena viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Hilltop above village. Actual SQM not publicly available
+"POINT (-7.71 40.12)",Barroca viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Ridge above village. Actual SQM not publicly available
+"POINT (-8.32 39.92)",Casal de Sao Simao viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Elevated point near village. Actual SQM not publicly available
+"POINT (-7.85 39.76)",Figueira viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Hilltop above village. Actual SQM not publicly available
+"POINT (-7.96 39.98)",Alvaro viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Ridge near village. Actual SQM not publicly available
+"POINT (-8.18 39.94)",Mosteiro viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Elevated plateau near village. Actual SQM not publicly available
+"POINT (-8.09 39.64)",Agua Formosa viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Hill above village. Actual SQM not publicly available
+"POINT (-8.15 40.13)",Aigra Nova viewpoint (Aldeias do Xisto),mainland,21.1,Starlight Foundation certification requirement >= 21.0,certification_threshold,Mountain ridge viewpoint. Actual SQM not publicly available
+"POINT (-8.22 40.09)",Chiqueiro viewpoint (Aldeias do Xisto),mainland,21.0,Starlight Foundation certification requirement >= 21.0,certification_threshold,Elevated point near village. Actual SQM not publicly available
+"POINT (-17.05 32.733)",Paul da Serra (Madeira),madeira,20.5,Estimated from Falchi 2016 + elevation (1400m),estimated,Plateau on Madeira. Above cloud layer potential
+"POINT (-16.929 32.736)",Pico do Arieiro (Madeira),madeira,20.6,Estimated from Falchi 2016 + elevation (1818m),estimated,Second highest peak Madeira. Above inversion layer
+"POINT (-28.399 38.469)",Mount Pico (Azores),azores,21.7,Estimated from Falchi 2016 World Atlas + extreme isolation,estimated,Highest point in Portugal (2351m). Mid-Atlantic
+"POINT (-25.489 37.769)",Lagoa do Fogo viewpoint (Sao Miguel Azores),azores,21.5,Estimated from Falchi 2016 World Atlas,estimated,Volcanic crater lake. Mid-Atlantic darkness
+"POINT (-31.099 39.708)",Caldeirão viewpoint (Flores Azores),azores,21.8,Estimated from Falchi 2016 (extreme western isolation),estimated,Remote western Azores. Among darkest in Atlantic
+"POINT (-27.376 38.767)",Ponta do Queimado (Faial Azores),azores,21.6,Estimated from Falchi 2016 World Atlas,estimated,Western tip Faial island. Ocean-facing
+"POINT (-7.384 38.452)",Monsaraz (Castle viewpoint),mainland,21.4,Dark Sky Alqueva monitoring network,measured,Medieval castle overlooking Alqueva. Part of reserve
