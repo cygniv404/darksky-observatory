@@ -117,7 +117,7 @@ def observation_summary(latitude: float) -> dict:
     return {
         "milky_way": mw,
         "moon_free_nights_per_month": moon_free_nights_per_month(),
-        "best_overall": f"Visit in August during new moon week for optimal conditions",
+        "best_overall": "Visit in August during new moon week for optimal conditions",
         "seasonal_notes": {
             "summer_jun_sep": "Best: MW visible, longest clear-sky probability, warm nights",
             "spring_apr_may": "Good: MW rises late, some clear nights, comfortable temperatures",

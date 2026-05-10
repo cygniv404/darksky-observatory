@@ -5,8 +5,7 @@ inter-annual variability, not confirmed trends (Kyba et al. 2017).
 """
 
 import logging
-from dataclasses import dataclass, field
-from typing import Literal
+from dataclasses import dataclass
 
 import numpy as np
 import xarray as xr

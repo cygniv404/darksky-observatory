@@ -59,7 +59,6 @@ def build_psf_kernel(
         2D kernel array (odd dimensions, centered).
     """
     radius_px = int(radius_km / pixel_size_km)
-    size = 2 * radius_px + 1
 
     y = np.arange(-radius_px, radius_px + 1) * pixel_size_km
     x = np.arange(-radius_px, radius_px + 1) * pixel_size_km

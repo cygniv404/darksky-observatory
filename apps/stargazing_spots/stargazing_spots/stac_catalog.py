@@ -7,7 +7,7 @@ Reference: https://stacspec.org/
 """
 
 import logging
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pystac
@@ -65,7 +65,7 @@ def create_darksky_catalog(
 
     spatial_extent = SpatialExtent(bboxes=[PORTUGAL_BBOX])
     temporal_extent = TemporalExtent(
-        intervals=[[datetime(2023, 1, 1, tzinfo=timezone.utc), None]]
+        intervals=[[datetime(2023, 1, 1, tzinfo=UTC), None]]
     )
     extent = Extent(spatial=spatial_extent, temporal=temporal_extent)
 
@@ -99,7 +99,7 @@ def create_darksky_catalog(
             ]],
         },
         bbox=PORTUGAL_BBOX,
-        datetime=datetime.fromisoformat(processing_date).replace(tzinfo=timezone.utc),
+        datetime=datetime.fromisoformat(processing_date).replace(tzinfo=UTC),
         properties={
             "processing:software": "darksky-pipeline v0.1.0",
             "processing:threshold_nw": 3.0,

@@ -58,7 +58,11 @@ def run_full_assessment(
     # 2. Cloud cover (CLAAS-3 5km satellite or ERA5 25km fallback)
     logger.info("--- [2/7] Cloud cover (clear-night fraction) ---")
     try:
-        from stargazing_spots.cloud_cover import compute_clear_night_fraction, resample_to_viirs_grid, ClearSkyConfig
+        from stargazing_spots.cloud_cover import (
+            ClearSkyConfig,
+            compute_clear_night_fraction,
+            resample_to_viirs_grid,
+        )
 
         # Try CLAAS-3 (5km satellite-observed) first, fall back to ERA5 (25km model)
         claas3_file = Path(__file__).parent.parent / "input" / "portugal" / "cache" / "claas3_clear_night_mainland.nc"

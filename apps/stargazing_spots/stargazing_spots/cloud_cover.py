@@ -74,7 +74,7 @@ def compute_sun_altitude(hour_utc: int, day_of_year: int, latitude: float) -> fl
 
     # Solar hour angle
     # Time offset in minutes (Portugal is near UTC, no timezone offset needed for ERA5 UTC data)
-    time_offset = eqtime  # For UTC-based calculations, longitude offset is handled by ERA5 grid
+    _ = eqtime  # noqa: F841
     # Actually for a proper calculation we need longitude, but since we're computing
     # per-latitude bands and ERA5 data is already in UTC, we compute for the center
     # longitude of Portugal (~-8°) as representative
@@ -130,7 +130,7 @@ def build_darkness_mask(latitudes: np.ndarray) -> np.ndarray:
                 mask[h, d - 1, i] = is_astronomical_dark(h, d, lat)
 
     # Summary statistics
-    dark_hours_per_lat = mask.sum(axis=(0, 1)) / 366  # average dark hours per day
+    _ = mask.sum(axis=(0, 1)) / 366  # noqa: F841
     logger.info("Darkness mask built: %d latitudes", n_lat)
     logger.info("  Dark hours/day range: %.1f (summer, lat=%.1f) to %.1f (winter)",
                 mask[:, 172, :].sum(axis=0).min(),  # June 21
@@ -664,7 +664,7 @@ def compute_clear_night_fraction_claas3(
             ])
 
             # Vectorized: compute darkness for all (time, hour, lat) combinations
-            n_lon = len(cfc.coords["longitude"].values)
+            _ = len(cfc.coords["longitude"].values)  # noqa: F841
             clear_sky = 1.0 - cfc_values  # Convert CFC to clear probability
             dark_weight = np.zeros_like(clear_sky)
 

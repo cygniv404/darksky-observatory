@@ -11,7 +11,7 @@ import numpy as np
 import rasterio
 from rasterio.crs import CRS
 from rasterio.transform import from_bounds
-from rasterio.warp import calculate_default_transform, reproject, Resampling
+from rasterio.warp import Resampling, calculate_default_transform, reproject
 
 logger = logging.getLogger(__name__)
 

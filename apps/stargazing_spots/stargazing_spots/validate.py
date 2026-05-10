@@ -4,10 +4,10 @@ import json
 import logging
 from pathlib import Path
 
+import geopandas as gpd
 import numpy as np
 import pandas as pd
-import geopandas as gpd
-from scipy.stats import pearsonr, spearmanr
+from scipy.stats import pearsonr
 from shapely import wkt
 
 logger = logging.getLogger(__name__)

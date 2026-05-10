@@ -7,6 +7,7 @@ Supports:
 """
 
 import logging
+from datetime import UTC
 from pathlib import Path
 
 import geopandas as gpd
@@ -37,7 +38,7 @@ def to_geojson(
         Path to written file.
     """
     import json
-    from datetime import datetime, timezone
+    from datetime import datetime
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -85,7 +86,7 @@ def to_geojson(
     if processing_params:
         geojson["processing"] = {
             **processing_params,
-            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "generated_at": datetime.now(UTC).isoformat(),
             "pipeline_version": "0.7.0",
             "source_product": "VNP46A4v001",
         }

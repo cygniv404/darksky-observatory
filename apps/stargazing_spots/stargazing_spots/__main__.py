@@ -19,26 +19,30 @@ from dotenv import load_dotenv
 # Load .env from app root (apps/stargazing_spots/.env)
 load_dotenv(Path(__file__).parent.parent / ".env")
 
+from datetime import UTC
+
 import geopandas as gpd
 import pandas as pd
 import xarray as xr
 
-from stargazing_spots.processing import classify_dark_sky, classify_temporal, extract_dark_coordinates
+from stargazing_spots.assess import filter_unsuitable, run_full_assessment
 from stargazing_spots.change_detection import run_change_detection
-from stargazing_spots.quality import analyze_quality, quality_report
-from stargazing_spots.sensitivity import run_sensitivity, find_optimal_threshold
 from stargazing_spots.enrichment import (
-    enrich_with_temporal,
     fetch_osm_features,
     filter_relevant_features,
     score_spots,
-    spatial_join,
 )
 from stargazing_spots.enrichment_raster import raster_sample_with_context
-from stargazing_spots.uncertainty import compute_confidence_layer, enrich_spots_with_confidence
-from stargazing_spots.assess import run_full_assessment, filter_unsuitable
 from stargazing_spots.export import to_cog, to_geojson, to_parquet
+from stargazing_spots.processing import (
+    classify_dark_sky,
+    classify_temporal,
+    extract_dark_coordinates,
+)
+from stargazing_spots.quality import analyze_quality
+from stargazing_spots.sensitivity import find_optimal_threshold, run_sensitivity
 from stargazing_spots.stac_catalog import create_darksky_catalog
+from stargazing_spots.uncertainty import compute_confidence_layer, enrich_spots_with_confidence
 
 logging.basicConfig(
     level=logging.INFO,
@@ -142,7 +146,7 @@ def run_pipeline(
     """Execute the full pipeline."""
     import json
     import time
-    from datetime import datetime, timezone
+    from datetime import datetime
 
     run_start = time.perf_counter()
     timings = {}
@@ -347,7 +351,7 @@ def run_pipeline(
 
     # Generate run summary
     run_summary = {
-        "run_timestamp": datetime.now(timezone.utc).isoformat(),
+        "run_timestamp": datetime.now(UTC).isoformat(),
         "pipeline_version": "0.7.0",
         "parameters": {
             "threshold_nw": threshold,
@@ -454,7 +458,7 @@ def _run_single(args):
     if args.from_cache:
         radiance = load_cached_radiance(args.from_cache)
     else:
-        from stargazing_spots.acquisition import fetch_viirs_radiance, extract_radiance_layer
+        from stargazing_spots.acquisition import extract_radiance_layer, fetch_viirs_radiance
 
         boundary_path = Path(__file__).parent.parent / "input" / "portugal" / "boundary" / "gadm41_PRT_1.json.zip"
         if not boundary_path.exists():
@@ -653,7 +657,6 @@ def _run_change_detection_for_layers(layers: list, output_dir: Path):
 
 def _run_change_detection(args):
     """Run change detection from CLI args (single region)."""
-    import json
 
     logger.info("=" * 60)
     logger.info("CHANGE DETECTION: 2023 → 2024 → 2025")

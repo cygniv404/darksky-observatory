@@ -8,7 +8,7 @@ import logging
 
 import geopandas as gpd
 import osmnx as ox
-from shapely.geometry import Point
+import xarray as xr
 
 logger = logging.getLogger(__name__)
 

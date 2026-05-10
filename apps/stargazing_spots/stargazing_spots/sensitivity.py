@@ -6,7 +6,9 @@ and ground-truth detection rate.
 
 import logging
 from dataclasses import dataclass
+from pathlib import Path
 
+import geopandas as gpd
 import numpy as np
 import pandas as pd
 import xarray as xr
@@ -183,7 +185,7 @@ def otsu_threshold(radiance: xr.DataArray, n_bins: int = 256, max_val: float = 2
 
     cumsum = np.cumsum(hist)
     cum_mean = np.cumsum(hist * bin_centers)
-    global_mean = cum_mean[-1] / total
+    _ = cum_mean[-1] / total
 
     for i in range(1, n_bins):
         w0 = cumsum[i] / total
@@ -226,8 +228,9 @@ def load_all_validation_sites(validation_dir: "Path | str") -> "gpd.GeoDataFrame
     Returns:
         GeoDataFrame with all validation sites and metadata columns.
     """
-    import geopandas as gpd
     from pathlib import Path
+
+    import geopandas as gpd
     from shapely import wkt as _wkt
 
     validation_dir = Path(validation_dir)
@@ -283,7 +286,6 @@ def validation_calibrated_threshold(
     Returns:
         Tuple of (optimal_threshold, results_dataframe).
     """
-    import geopandas as gpd
 
     if thresholds is None:
         thresholds = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 7.0, 10.0]

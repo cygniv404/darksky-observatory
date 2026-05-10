@@ -5,6 +5,7 @@ Downloads annual composites (500m, nW/cm2/sr) with joblib caching.
 
 import logging
 import os
+from datetime import UTC
 from pathlib import Path
 
 import geopandas as gpd
@@ -24,7 +25,7 @@ VIIRS_VARIABLE = "NearNadir_Composite_Snow_Free"
 def get_earthdata_token() -> str:
     token = os.environ.get("EARTHDATA_TOKEN")
     if not token:
-        raise EnvironmentError(
+        raise OSError(
             "EARTHDATA_TOKEN not set. Register at https://urs.earthdata.nasa.gov/ "
             "and set the token as an environment variable."
         )
@@ -34,12 +35,12 @@ def get_earthdata_token() -> str:
 def _write_cache_metadata(cache_file: Path, params: dict) -> None:
     """Write a JSON sidecar with metadata about what produced this cache file."""
     import json
-    from datetime import datetime, timezone
+    from datetime import datetime
 
     meta_path = cache_file.with_suffix(".meta.json")
     metadata = {
         "cache_file": cache_file.name,
-        "created_at": datetime.now(timezone.utc).isoformat(),
+        "created_at": datetime.now(UTC).isoformat(),
         "parameters": params,
         "file_size_bytes": cache_file.stat().st_size if cache_file.exists() else 0,
         "library": "blackmarblepy",
